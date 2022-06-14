@@ -3,7 +3,7 @@
 
 try{
 	$bdd = new PDO('mysql:host=localhost;dbname=lego;charset=utf8','root','');
-	echo 'connexion OK';
+	//echo 'connexion OK';
 }catch(Exception $e){
 	die('Erreur : '.$e->getMessage());
 }
