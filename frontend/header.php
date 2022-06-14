@@ -25,16 +25,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav" class="d-flex">
                 <ul class="navbar-nav" >
                     <li class="nav-item" class="p-2">
-                    <a class="nav-link"style="text background-color: #55ACEE;" href="https://www.themoviedb.org/movie/upcoming?language=fr">Films</a>
+                    <a class="nav-link" href="http://localhost/gitprojetphp/projet-php/frontend/categories.php<?php "categorie.php?nom='Architecture'";?>">Architecture</a>
                     </li>
                     <li class="nav-item" class="p-2">
-                    <a class="nav-link" href="https://www.themoviedb.org/tv/top-rated?language=fr"></a>
+                    <a class="nav-link" href="<?php "http://localhost/gitprojetphp/projet-php/frontend/categories.phpcategorie.php?nom='Star Wars'";?>">Star Wars</a>
                     </li>
                     <li class="nav-item" class="p-2">
-                    <a class="nav-link" href="https://www.themoviedb.org/person?language=fr-FR"></a>
+                    <a class="nav-link" href="<?php "http://localhost/gitprojetphp/projet-php/frontend/categories.phpcategorie.php?nom='Marvel'";?>">Marvel</a>
                     </li>
                     <li class="nav-item" class="p-2">
-                    <a class="nav-link" href="https://www.themoviedb.org/documentation/api?language=fr-FR">API</a>
+                    <a class="nav-link" href="<?php "http://localhost/gitprojetphp/projet-php/frontend/categories.phpcategorie.php?nom='Lego City'";?>">Lego City</a>
+                    </li>
+                    <li class="nav-item" class="p-2">
+                    <a class="nav-link" href="<?php "http://localhost/gitprojetphp/projet-php/frontend/categories.phpcategorie.php?nom='Jurassic Park'";?>">Jurassic Park</a>
                     </li>
                 </ul>
                 <a href="#" class="btn btn-dark" role="button" aria-disabled="true">Connexion</a>
