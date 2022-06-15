@@ -9,6 +9,7 @@ via un formulaire de connexion
  4 etape si l'utilisateur existe le renvoyer vers la page administrateur
  ou sinon renvoyer message d'erreur
 */
+$_SESSION['authentification'] = "OK";
 ?>
 <html>
 <body>

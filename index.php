@@ -18,8 +18,7 @@ while ($donnees = $reponse->fetch()){
 			  <img src="<?php echo $donnees['image'];?>" class="card-img-top" alt="...">
 			  <div class="card-body">
 				<h5 class="card-title"><?php echo $donnees['titre'];?></h5>
-				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-				<a href="article.php?identifiant=<?php $donnees['id'];?>" class="btn btn-primary">Lire la suite</a>
+				<p class="card-text"><?php echo $donnees ['contenu'];?>.</p>
 			  </div>
 			</div>
 			<?php
