@@ -19,6 +19,7 @@ while ($donnees = $reponse->fetch()){
 			  <div class="card-body">
 				<h5 class="card-title"><?php echo $donnees['titre'];?></h5>
 				<p class="card-text"><?php echo substr($donnees['contenu'],0,30);?>.</p>
+				 <button action="frontend/article.php" class="btn btn-primary" type="submit" name="valide"><a href="frontend/article.php?id=<?php echo $donnees['id'];?>"> valider</a></button>
 			  </div>
 			</div>
 			<?php
