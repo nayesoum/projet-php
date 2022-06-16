@@ -1,0 +1,17 @@
+body{
+    color: rgb(184, 133, 133);
+}
+#formulaire_one{
+    border-radius: 50px;
+    color: blue;
+
+}
+
+.con{
+    border-radius: 50px;
+    color: blue;
+
+}
+.head{
+    height: 80px;
+}

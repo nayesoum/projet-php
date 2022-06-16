@@ -18,7 +18,7 @@ while ($donnees = $reponse->fetch()){
 			  <img src="<?php echo $donnees['image'];?>" class="card-img-top" alt="...">
 			  <div class="card-body">
 				<h5 class="card-title"><?php echo $donnees['titre'];?></h5>
-				<p class="card-text"><?php echo $donnees ['contenu'];?>.</p>
+				<p class="card-text"><?php echo substr($donnees['contenu'],0,30);?>.</p>
 			  </div>
 			</div>
 			<?php
