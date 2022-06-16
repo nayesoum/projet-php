@@ -2,7 +2,7 @@
 /* Vérification Authentification*/
 session_start();
 include("appelbdd.php");
-include("../frontend/header.php");
+include("headerback.php");
 if($_SESSION['authentification'] == "OK"){
 
 
@@ -22,9 +22,9 @@ if($_SESSION['authentification'] == "OK"){
                   <div class="card-body">
                     <h5 class="card-title"><?php echo $donnees['titre'];?></h5>
                     <p class="card-text"><?php echo $donnees ['date'];?></p>
-                    <button> <a href="formmodif.php"> Modification</a></button>
-                    <button> <a href="formsuppr.php"> Suppression</a></button>
-                  </div>
+                    <button> <a href="modification.php?id=<?php echo $donnees['id'];?>"> Modification</a></button>
+                    <button> <a href="formsuppr.php?id=<?php echo $donnees['id'];?>"> Suppression</a></button>
+                    
                 </div>
                 <?php
     } 

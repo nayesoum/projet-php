@@ -6,26 +6,11 @@
 session_start();
 include("appelbdd.php");
 if($_SESSION['authentification'] == "OK"){
-//echo "salut";
 
 
-
-  
-       
-        
    
-    
-
-    
-    // if($_POST != null) {
-    //     var_dump($_POST);
-    //     $title = $_POST['titre'];
-    //     $img = $_POST['image'];
-    //     $category = $_POST['categorie'];
-    //     $content = $_POST['contenu'];
-    //     $datetime = $_POST['date'];
     if(isset($_POST['valide'])){
-        var_dump($_POST);
+        
             $title = $_POST['titre'];
             $img = $_POST['image'];
             $category = $_POST['categorie'];
@@ -34,23 +19,14 @@ if($_SESSION['authentification'] == "OK"){
 
         $sql="INSERT INTO articles (id, categorie, titre, image, contenu, date) VALUES (NULL,'$category', '$title', '$img', '$content', '$datetime')";
         $result = $bdd->query($sql);
-        print_r($result);
+        
         if($result){
           //echo"informations ajoutées avec succès";
           header('location:accueil.php');
         }else{
           die('Erreur : '.$e->getMessage());
         }
-   /* if($title != null && $img != null && $category != null && $content != null && $datetime != null){
-        $insert = $bdd->query ("INSERT INTO articles ('id', 'categorie', 'titre', 'image', 'contenu', 'date') VALUES (NULL, '$category', '$title', '$img', '$content', '$datetime')");
-       if ($insert){
-           echo "article créé";
-         }else{
-           echo "article non créé";
-         }
-        // $result = $bdd->exec("$");
-      //  echo "article créé";
-    }*/
+  
     }
     include("headerback.php");
 ?>
@@ -86,7 +62,7 @@ if($_SESSION['authentification'] == "OK"){
                 <?php
      
 }
-$post
+
     ?>
     </div>
     </div>

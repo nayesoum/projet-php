@@ -3,9 +3,6 @@ include("../backend/appelbdd.php");
 include("header.php");
 
 
-
-var_dump($_GET);
-
 $sql = "SELECT * FROM `articles` WHERE ORDER BY date";
 
 if(isset($_GET ['cat'])){
