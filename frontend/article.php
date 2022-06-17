@@ -8,7 +8,7 @@ include("header.php");
 
 $article = "";
 
-
+// ici si 
 if(isset($_GET ['id']) && is_numeric ($_GET ['id'])){
     $article = $_GET ['id'];
 }else{

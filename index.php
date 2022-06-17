@@ -1,8 +1,9 @@
 <?php
-include("backend/appelbdd.php");
-include("headerindex.php");
+include("backend/appelbdd.php");// lié la base de donnée a ma page index.php
+include("headerindex.php"); // lié mon header a ma page index.php
 
-
+//ici je fait ma demande au prés de ma base de donnée
+//$reponse= demande a ma base de donnée de selectionner les articles et de les classer par date et dans la limite de 5
 $reponse = $bdd->query ("SELECT * FROM articles ORDER BY `date` LIMIT 5");
 
 ?>
@@ -39,15 +40,15 @@ $reponse = $bdd->query ("SELECT * FROM articles ORDER BY `date` LIMIT 5");
     <div class="row">
 
 <?php
-
+// fait une boucle si $donnée est egale a reponse a lors affiche les dans les cards a 5 reprises
 while ($donnees = $reponse->fetch()){
 ?>
 			<div class="card col" style="width: 18rem;">
 			  <img src="<?php echo $donnees['image'];?>" class="card-img-top" alt="...">
 			  <div class="card-body">
 				<h5 class="card-title"><?php echo $donnees['titre'];?></h5>
-				<p class="card-text"><?php echo substr($donnees['contenu'],0,30);?>.</p>
-				 <button action="frontend/article.php" class="btn btn-outline-info" type="button" name="valide"><a href="frontend/article.php?id=<?php echo $donnees['id'];?>">Lire la suite</a></button>
+				<p class="card-text"><?php echo substr($donnees['contenu'],0,30);?>...</p>
+				<a href="frontend/article.php?id=<?php echo $donnees['id'];?>" class="btn btn-outline-info">Lire la suite</a>
 			  </div>
 			</div>
 			<?php
@@ -56,7 +57,7 @@ while ($donnees = $reponse->fetch()){
 </div>
 </div>
 <?php
-include("frontend/footer.php");
+include("frontend/footer.php");// lie le footer avec un includ
 ?>
 <?php //ici notre page principale qui regroupe les 5 dernier articles -->
 
