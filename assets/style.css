@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(20, 41, 84);
+}
+
+h1{
+        text-align: center;
+        padding-top: 120px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 45px;
+        margin: 50px;
+        line-height: 50px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2.5px 2.5px rgb(86, 86, 207);
+}
+.titre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-content: stretch;
+}
+.debut{
+    display: flex;
+    flex-direction: row;
+}
+.formulaire{
+    border-radius: 10px;
+}
+#navbarNav{
+    justify-content: flex-end;
+}
+#imgLogos{
+    
+    height: 10rem;
+}
+
+.ba{
+    
+    border-radius: 10px;
+}
+header{
+    margin-bottom: 40px;
+}
+.img{
+    height: 30rem;
+    width: 60rem;
+   margin-left: 12rem;
+}
+#margin{
+    margin-top: 10rem;
+}

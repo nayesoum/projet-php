@@ -5,8 +5,6 @@ include("headerback.php");
 
 
 
-
-
 if($_POST != null){
   $email = $_POST['mail'];
   $pwd = $_POST['pass'];
@@ -41,7 +39,7 @@ $_SESSION['authentification'] = "OK";
 ?>
 <html>
 <body class="con">
-    <div id="formulaire_one" >
+    <div id="formulaire_one" id="one" >
       <form action="accueil.php" method="post">
         <h3>connexion</h3>
         <label for="mail">Vous connecter ici</label>

@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(20, 41, 84);
+}
+
+#formulaire_one{
+    border-radius: 50px;
+    color: blue;
+}
+
+.con{
+    border-radius: 50px;
+    color: blue;
+
+}
+.head{
+    height: 80px;
+}
+#navbarNav{
+    justify-content: flex-end;
+}
+#imgLogos{
+    
+    height: 10rem;
+}
+formulaire_one{
+    display: flex;
+    flex-direction: column;
+}
+#one{
+     border-radius: 10px
+    
+}
+.con{
+    border-radius: 10px;
+    color: blue;
+
+}
+label{
+    color: white;
+}

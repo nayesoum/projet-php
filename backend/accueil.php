@@ -17,7 +17,7 @@ if($_SESSION['authentification'] == "OK"){
     
     while ($donnees = $reponse->fetch()){
     ?>
-                <div class="card col" style="width: 18rem;">
+                <div class="card row" style="width: 20rem;">
                   <img src="<?php echo $donnees['image'];?>" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title"><?php echo $donnees['titre'];?></h5>
@@ -26,12 +26,13 @@ if($_SESSION['authentification'] == "OK"){
                     <button> <a href="formsuppr.php?id=<?php echo $donnees['id'];?>"> Suppression</a></button>
                     
                 </div>
+                </div>
+    </div>
                 <?php
     } 
 }
     ?>
-    </div>
-    </div>
+   
 
 
 <?php

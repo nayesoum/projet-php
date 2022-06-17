@@ -10,8 +10,10 @@ if($_SESSION['authentification'] == "OK"){
     $img = $_POST['image'];
     $content = $_POST['contenu'];
     $datetime = $_POST['date'];
-$sql= "UPDATE `article` SET `titre`='$title',`image`='$img',`contenu`='$content' WHERE `id`= '$id'";
+$sql= "UPDATE `articles` SET `titre`='$title',`image`='$img',`contenu`='$content' WHERE `id`= $id";
+//echo $sql;
 $results = $bdd->query($sql);
+//var_dump($results);
 header("location:accueil.php");
 }
 if(isset($_GET['id'])){
@@ -21,7 +23,7 @@ $ok = $formUpdatearticle->fetch();
 }
 ?>
 <section> <!--formulaire de modification des admins-->
-        <form action="accueil.php?id=<?php echo $ok['id'] ?>" method="post" style="padding:150px">
+        <form action="modification.php?id=<?php echo $ok['id'] ?>" method="post" style="padding:150px">
             <h2>Formulaire de modification d'article</h2>
             <label for="id">ID</label>
             <input type="text" name="idvisible" value="<?php echo $ok['id'];?>" disabled>
@@ -29,9 +31,9 @@ $ok = $formUpdatearticle->fetch();
             <label for="titre">titre</label>
             <input type="text" name="titre" value="<?php echo $ok['titre'];?>">
             <label for="img">image</label>
-            <input type="text" name="email" value="<?php echo $ok['image'];?>">
+            <input type="text" name="image" value="<?php echo $ok['image'];?>">
             <label for="text">contenu</label>
-            <input type="contenu" name="password" value="<?php echo $ok['contenu'];?>">
+            <input type="contenu" name="contenu" value="<?php echo $ok['contenu'];?>">
             <label for="date">date</label>
             <input type="date" name="date" value="<?php echo $ok['date'];?>">
             <button type="submit" name="modifier">Modifier</button>
